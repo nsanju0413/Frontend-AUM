@@ -1,12 +1,25 @@
 p {
-    color: green;
-    font-size: 20px;
-    font-family:"Courier New ";
+    border: 1px dashed gold;
+    padding: 20px 20px 10px;
 }
 
 h1
 {
     color: red;
-    font-size: 50px;
+    font-size: 100px;
     font-family:"serif";
+}
+
+.green_class{
+    color: rgb(76,122,76);
+}
+
+#menu
+{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
