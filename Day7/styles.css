@@ -22,12 +22,11 @@ div p{
     border: 2px dotted red;
     color: black;
 
-    padding: 1px;
     opacity: 0.5;
     height: 300px;
     width: 300px;
     margin-bottom: 3px;
-    padding-left: 3px;
+    padding: 2px 2px 2px 3px;
     overflow: auto;
     border-radius: 50%;
 }
@@ -46,6 +45,11 @@ table.table tr:nth-child(odd){
     color: white;
 
 }
+table.table tr:nth-child(even){
+    background-color: white;
+    color: orange;
+
+}
 tr.even{
     background-color: orange;
 }
@@ -54,3 +58,9 @@ th{
     color: blue;
 }
 
+
+.td_anchor{
+    color:white ;
+    background-color:gray;
+    font-size: 25px;
+}
