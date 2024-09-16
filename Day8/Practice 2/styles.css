@@ -7,14 +7,13 @@ body {
 h2 { padding: 1em; }
 header { border-bottom: 2px solid #ef9c00; }
 main {
-    height: 350px; /* to give the aside some height
-for its border */
+    height: 350px;
     width: 600px;
     float: left;
     border-right: 2px solid #ef9c00; }
 aside {
     width: 360px;
-    float: left; }
+    float: right; }
 footer {
     clear: both;
     border-top: 2px solid #ef9c00; }
