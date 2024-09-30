@@ -9,6 +9,6 @@
 const subtotal= 200;
 const taxPercentage = .05;
 const taxAmount= subtotal*taxPercentage;
-let total=subtotal+taxAmount;
+let total=(subtotal+taxAmount).toFixed(2);
 
 console.log("Subtotal = "+subtotal+"\n"+ "Total = "+ total);
