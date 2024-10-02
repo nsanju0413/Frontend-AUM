@@ -1,24 +1,16 @@
-//Arithmetic functions in Javascript
+const sum = 2 + 3;
+const difference = 5 - 2;
+const product = 4 * 5;
+const quotient = 10 / 2;
+const remainder = 17 % 5;
+const exponentiation = 2 ** 3;
 
-let sum = 2 + 3;
 console.log("The sum is:", sum);
-
-let difference = 5 - 2;
 console.log("The difference is:", difference);
-
-let product = 4 * 5;
 console.log("The product is:", product);
-
-let quotient = 10 / 2;
 console.log("The quotient is:", quotient);
-
-let remainder = 17 % 5;
 console.log("The remainder is:", remainder);
+console.log("The exponentiation result is:", exponentiation);
 
-let result = 2 ** 3;
-console.log("The result is:", result);
-
-let a = 23;
-
-if (a == 23) console.log("true");
-else console.log("false");
+const a = 20;
+console.log(a === 23 ? "true" : "false");
