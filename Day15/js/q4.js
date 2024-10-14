@@ -4,7 +4,7 @@ const num=[];
 
 for(i=0;i<5;i++)
 {
-    num[i]=prompt("Enter a number");
+    num[i]=parseInt(prompt("Enter a number"));
 }
 
 const sorted=num.sort();
