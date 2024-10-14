@@ -1,0 +1,1 @@
+//Write a program that gets 5 numbers from a user and prints their max and min.
