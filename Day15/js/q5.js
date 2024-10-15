@@ -5,7 +5,7 @@ const nums=[];
 while (nums.length<3)
 {
     let n=parseInt(prompt("Enter a number between -4 and 10;"));
-    if(n<=-4||n>=10)
+    if(n<-4||n>10)
     {
         console.log("number should be between -4 and 10")
     }
