@@ -10,4 +10,9 @@ function toKilometers(miles) {
 
 const mile = parseInt(prompt("Enter Miles"));
 const kms = toKilometers(mile);
-alert(`${mile} miles is  ${kms} kilometers.`);
+alert(`${mile} miles is  ${kms} kilometers.`)
+
+sayHello();
+function sayHello() {
+    console.log("Hello");
+}
