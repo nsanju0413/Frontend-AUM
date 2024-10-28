@@ -9,3 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#show_button");
     showButton.addEventListener("click", setLabel);
 });
+
