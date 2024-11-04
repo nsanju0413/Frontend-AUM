@@ -37,21 +37,3 @@ function generateProblem(rangeFrom, rangeTo) {
     document.getElementById('num1').textContent = num1;
     document.getElementById('num2').textContent = num2;
 }
-
-operation = addOperation.checked ? '+' : subOperation.checked ? '-' : mulOperation.checked ? '*' : divOperation.checked ? '/' : null;
-    if (operation) {
-        switch (operation) {
-            case '+':
-                correctAnswer = num1 + num2;
-                break;
-            case '-':
-                correctAnswer = num1 - num2;
-                break;
-            case '*':
-                correctAnswer = num1 * num2;
-                break;
-            case '/':
-                correctAnswer = num2 !== 0 ? (num1 / num2).toFixed(2) : 'undefined';
-                break;
-        }
-    }
