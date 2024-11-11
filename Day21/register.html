@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container mt-5 p-4" style="border: 2px solid gray;">
+		<h2>Registration Form</h2>
+		<form>
+			<!-- Name -->
+			<div class="mb-3">
+				<label for="name" class="form-label">Name</label>
+				<input type="text" class="form-control" id="name" required>
+				<span class="text-danger" id="name_error_msg">Please enter your name</span>
+			</div>
+
+			<!-- Surname -->
+			<div class="mb-3">
+				<label for="surname" class="form-label">Surname</label>
+				<input type="text" class="form-control" id="surname" required>
+			</div>
+
+			<!-- Email -->
+			<div class="mb-3">
+				<label for="email" class="form-label">Email address</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+
+			<!-- Mobile Number -->
+			<div class="mb-3">
+				<label for="mobile" class="form-label">Mobile Number</label>
+				<input type="tel" class="form-control" id="mobile" pattern="^[0-9]{10}$" placeholder="10-digit mobile number">
+			</div>
+
+			<!-- Contact Me By (Radio Buttons) -->
+			<div class="mb-3">
+				<label class="form-label">Contact Me By</label>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email">
+					<label class="form-check-label" for="contactEmail">Email</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="contactMethod" id="contactMobile" value="mobile">
+					<label class="form-check-label" for="contactMobile">Mobile</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="contactMethod" id="noContact" value="noContact">
+					<label class="form-check-label" for="noContact">Do Not Contact Me</label>
+				</div>
+			</div>
+
+			<!-- Terms and Conditions -->
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="terms" required>
+				<label class="form-check-label" for="terms">I accept the <a href="#">Terms and Conditions</a></label>
+			</div>
+
+			<!-- Submit Button -->
+			<button type="submit" class="btn btn-primary">Register</button>
+		</form>
+	</div>
+
+	<!-- Bootstrap JS (optional) -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
