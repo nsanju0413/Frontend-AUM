@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our List</title>
+</head>
+<body>
+    <form id="join-list-form">
+        <label for="email_address">Email Address:</label>
+        <input type="email" id="email_address" name="email_address" required>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <button type="submit">Join Our List</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('join-list-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const email = document.getElementById('email_address').value.trim();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const responseDiv = document.getElementById('response');
+
+            // Validate inputs
+            const errors = [];
+            if (!validateEmail(email)) {
+                errors.push("Invalid email address.");
+            }
+            if (!name) {
+                errors.push("Name is required.");
+            }
+            if (!validatePhone(phone)) {
+                errors.push("Invalid phone number. Use the format 999-999-9999.");
+            }
+
+            if (errors.length > 0) {
+                responseDiv.innerHTML = errors.map(error => `<p>${error}</p>`).join('');
+                return;
+            }
+
+            // Mock server response
+            const formData = {
+                email_address: email,
+                name: name,
+                phone: phone
+            };
+
+            // Simulate a server response
+            setTimeout(() => {
+                responseDiv.innerHTML = 'Form submitted successfully!';
+            }, 1000);
+        });
+
+        // Email validation function
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Phone validation function
+        function validatePhone(phone) {
+            const re = /^\d{3}-\d{3}-\d{4}$/;
+            return re.test(phone);
+        }
+    </script>
+</body>
+</html>
